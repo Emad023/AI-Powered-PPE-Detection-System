@@ -79,58 +79,6 @@ torch>=1.13.0
 torchvision>=0.14.0
 ```
 
-## Usage
-
-### Basic Video Processing
-```bash
-python3 workplace_safety_monitor.py \
-    --source test_videos/construction_site.mp4 \
-    --ppe-weights best.pt \
-    --save-vis output/
-```
-
-### Live Camera Monitoring
-```bash
-# Built-in webcam
-python3 workplace_safety_monitor.py \
-    --source 0 \
-    --ppe-weights best.pt \
-    --save-vis live_output/
-
-# External USB camera
-python3 workplace_safety_monitor.py \
-    --source 1 \
-    --ppe-weights best.pt \
-    --save-vis live_output/
-
-# IP Camera (RTSP stream)
-python3 workplace_safety_monitor.py \
-    --source "rtsp://username:password@192.168.1.100:554/stream1" \
-    --ppe-weights best.pt \
-    --save-vis live_output/
-```
-
-### Security Access Control Setup
-```bash
-# For access control at facility entrance
-python3 workplace_safety_monitor.py \
-    --source "rtsp://entrance_camera_ip:554/stream" \
-    --ppe-weights best.pt \
-    --save-vis security_logs/ \
-    --conf-helmet 0.80 \
-    --conf-vest 0.75
-```
-
-### Model Evaluation
-```bash
-# Evaluate model performance on test dataset
-python3 workplace_safety_monitor.py \
-    --ppe-weights best.pt \
-    --eval-root dataset/valid \
-    --conf-helmet 0.65 \
-    --conf-vest 0.70
-```
-
 ## Configuration Options
 
 ### Input Sources
