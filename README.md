@@ -78,30 +78,6 @@ ultralytics>=8.0.0
 torch>=1.13.0
 torchvision>=0.14.0
 ```
-
-## Configuration Options
-
-### Input Sources
-- `--source`: Video file, camera index (0,1,2...), or stream URL
-- `--ppe-weights`: Ultralytics YOLO model file (.pt)
-- `--ppe-onnx`: ONNX model file (alternative to .pt)
-- `--person-weights`: Person detection model (default: auto-download)
-
-### Detection Thresholds
-- `--conf-helmet`: Helmet detection confidence (default: 0.65)
-- `--conf-vest`: Vest detection confidence (default: 0.70)
-- `--nms-iou`: Non-maximum suppression IoU threshold (default: 0.50)
-
-### Tracking & Association
-- `--track-iou`: IoU threshold for person tracking (default: 0.35)
-- `--track-max-age`: Maximum frames to keep unmatched tracks (default: 20)
-- `--head-iou-gate`: Helmet-to-head region overlap threshold (default: 0.10)
-- `--torso-iou-gate`: Vest-to-torso region overlap threshold (default: 0.15)
-
-### Output Options
-- `--save-vis`: Directory to save annotated frames and video
-- `--eval-root`: Dataset directory for evaluation mode
-
 ## Project Structure
 
 ```
