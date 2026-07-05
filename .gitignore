@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+output/
+
+dataset/
+
+yolo12n.pt
+
+test_videos/
