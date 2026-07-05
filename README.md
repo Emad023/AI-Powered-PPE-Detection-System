@@ -1,4 +1,4 @@
-# Workplace Safety Monitor - AI-Powered PPE Detection System
+# AI-Powered PPE Detection System
 
 A sophisticated computer vision system that monitors Personal Protective Equipment (PPE) compliance in real-time using advanced YOLO models and intelligent tracking algorithms.
 
